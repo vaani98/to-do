@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Text Input Border test</title>
+    </head>
+    <body>
+        <br>
+        <input type="text" id="address1" value="test text input" class="question-text" size=30> 
+        <br>
+        <input type="button" value="Click me" onclick="toggleBorder()">
+    </body>
+    <script type="text/javascript">
+        function toggleBorder () {
+            var myInput = document.getElementById("address1");
+            myInput.classList.toggle('question-text-border');
+        }
+    </script>
+    <style scoped lang="scss">
+        .question-text {
+            border: 0;
+        }
+        .question-text-border {
+            border: 1px solid black;
+        }
+    </style>
+</html>
